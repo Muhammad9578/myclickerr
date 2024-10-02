@@ -1,0 +1,12 @@
+Insta mojo payment gateway 
+
+https://docs.instamojo.com/reference/payments-api
+
+Keys :
+
+Test Instamojo API's: Private Key: test_4eab8c45f7253e495acf207e7b2 
+
+Private Auth Token: 
+test_18902b8bfd35abb6c2d59d37164 
+
+Private Salt: 0f75b006c36c4a159fbc91413b598e3e

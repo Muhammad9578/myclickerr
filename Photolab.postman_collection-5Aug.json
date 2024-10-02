@@ -1,0 +1,1607 @@
+{
+	"info": {
+		"_postman_id": "b6ecec44-5773-425f-b6b2-92f5c0b319ed",
+		"name": "Photolab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8670231"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "signup_as",
+									"value": "user",
+									"description": "user, photographer",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/kamra/Desktop/default.png"
+								},
+								{
+									"key": "name",
+									"value": "Abraham",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abraham22@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+92",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "3224653772",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "per_hour_price",
+									"value": "30",
+									"description": "for photographer",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "31.3952319",
+									"description": "for both user and photographer",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "74.2570513",
+									"description": "for both user and photographer",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "New York",
+									"description": "for photographer",
+									"type": "text"
+								},
+								{
+									"key": "skills",
+									"value": "Creative mind, knowledge of photography techniques, and good communication skills",
+									"description": "for photographer",
+									"type": "text"
+								},
+								{
+									"key": "short_bio",
+									"value": "I am professional photographer who grew up in New York having excellent photography skills",
+									"type": "text"
+								},
+								{
+									"key": "is_available",
+									"value": "1",
+									"description": "boolean (0, 1)",
+									"type": "text"
+								},
+								{
+									"key": "timeslots",
+									"value": "[{\"time\":\"1:00 AM\"},{\"time\":\"2:00 AM\"},{\"time\":\"3:00 AM\"},{\"time\":\"4:00 AM\"},{\"time\":\"5:00 AM\"},{\"time\":\"6:00 AM\"},{\"time\":\"7:00 AM\"},{\"time\":\"8:00 AM\"},{\"time\":\"9:00 AM\"},{\"time\":\"10:00 AM\"},{\"time\":\"11:00 AM\"},{\"time\":\"12:00 PM\"},{\"time\":\"01:00 PM\"},{\"time\":\"02:00 PM\"},{\"time\":\"03:00 PM\"},{\"time\":\"04:00 PM\"},{\"time\":\"05:00 PM\"},{\"time\":\"06:00 PM\"},{\"time\":\"07:00 PM\"},{\"time\":\"08:00 PM\"},{\"time\":\"09:00 PM\"},{\"time\":\"10:00 PM\"},{\"time\":\"11:00 PM\"},{\"time\":\"12:00 AM\"}]",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "1690973376",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"description": "Male, Female, Other",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "+IN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/signup",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "login_as",
+									"value": "1",
+									"description": "1 for User, 2 for Photographer",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kamranabrar90@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/login",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "132",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/kamra/Desktop/default.png"
+								},
+								{
+									"key": "name",
+									"value": "Kamran",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+92",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "3225562622",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "31.3952319",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "74.2570513",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "New York",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "A photographer is someone who is skilled at taking pictures or photographs with a camera. An amateur photographer takes pictures for their own use.",
+									"type": "text"
+								},
+								{
+									"key": "per_hour_price",
+									"value": "35",
+									"type": "text"
+								},
+								{
+									"key": "equipment_charges",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "equipment_details",
+									"value": "This professional photography equipment list has all the must-have gear for photographers, from filters to flash.",
+									"type": "text"
+								},
+								{
+									"key": "paid_equipments",
+									"value": "Whether you are a beginner looking to start this great hobby or an experienced photographer that is looking to upgrade their kit, this breakdown of essential equipment for photographers will help you out.",
+									"type": "text"
+								},
+								{
+									"key": "bank_name",
+									"value": "Bank Name",
+									"type": "text"
+								},
+								{
+									"key": "account_number",
+									"value": "4242424242424242",
+									"type": "text"
+								},
+								{
+									"key": "account_holder_name",
+									"value": "Kamran",
+									"type": "text"
+								},
+								{
+									"key": "bank_country",
+									"value": "USA",
+									"type": "text"
+								},
+								{
+									"key": "pan_number",
+									"value": "1753267523",
+									"type": "text"
+								},
+								{
+									"key": "skills",
+									"value": "Creative mind, knowledge of photography techniques, and good communication skills",
+									"type": "text"
+								},
+								{
+									"key": "short_bio",
+									"value": "I am professional photographer who grew up in New York having excellent photography skills",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "+IN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/update-profile",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"update-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/logout/2",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"logout",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateFCMToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"description": "android, ios",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "FCM_TOKEN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/update-fcm-token",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"update-fcm-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangePassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/change-password",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAccount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/delete-account/6",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"delete-account",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ForgotPassword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/forgot-password/kamranabrar90@gmail.com",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"forgot-password",
+								"kamranabrar90@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "kamranabrar90@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/reset-password",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Market Place",
+					"item": [
+						{
+							"name": "Categories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Base_URL}}/api/marketplace-categories",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"api",
+										"marketplace-categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CategoryProducts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Base_URL}}/api/category-products/1",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"api",
+										"category-products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UserCards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "action",
+									"value": "add",
+									"description": "add, view, update, delete",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "card_holder_name",
+									"value": "Kamran Abrar",
+									"type": "text"
+								},
+								{
+									"key": "card_number",
+									"value": "4242424242424242",
+									"type": "text"
+								},
+								{
+									"key": "exp_month",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "exp_year",
+									"value": "24",
+									"type": "text"
+								},
+								{
+									"key": "cvv",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "card_id",
+									"value": "1",
+									"description": "required if action is update, delete",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/user-card",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"user-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserHome",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "31.3952319",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "74.2570513",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/user-home",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"user-home"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HirePhotographer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "132",
+									"type": "text"
+								},
+								{
+									"key": "photographer_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "event_details",
+									"value": "The massive technology conference Techweek references past attendees and sponsors to illustrate how popular and illustrious the event is. If you do not have big names to reference you can include testimonials and reviews from past attendees to create the same effect. ",
+									"type": "text"
+								},
+								{
+									"key": "event_date",
+									"value": "05 May 2023",
+									"type": "text"
+								},
+								{
+									"key": "event_time",
+									"value": "01:00 PM",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "10 Downing Street London",
+									"type": "text"
+								},
+								{
+									"key": "total_time",
+									"value": "35hrs-40hrs / week",
+									"type": "text"
+								},
+								{
+									"key": "paid_equipments",
+									"value": "1",
+									"description": "boolean (0, 1)",
+									"type": "text"
+								},
+								{
+									"key": "total_amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "event_title",
+									"value": "Technology Conference",
+									"type": "text"
+								},
+								{
+									"key": "event_end_date",
+									"value": "10 My 2023",
+									"type": "text"
+								},
+								{
+									"key": "event_end_time",
+									"value": "09:00 PM",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "51.5034",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "0.1276",
+									"type": "text"
+								},
+								{
+									"key": "address_line1",
+									"value": "10 Downing Street",
+									"type": "text"
+								},
+								{
+									"key": "address_line2",
+									"value": "London, United Kingdom",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "London",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "London",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "United Kingdom",
+									"type": "text"
+								},
+								{
+									"key": "pin_code",
+									"value": "112331",
+									"type": "text"
+								},
+								{
+									"key": "event_category_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "bid_amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "coupon_code_discount",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "tax_amount",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "total_equipment_amount",
+									"value": "150",
+									"type": "text"
+								},
+								{
+									"key": "selected_equipments",
+									"value": "[{\"equipment_id\":\"12\",\"count\":\"2\"}]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/hire-photographer",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"hire-photographer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserBookings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/user-bookings/139",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"user-bookings",
+								"139"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteConnectAccount (Just for Developer)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account_id",
+									"value": "acct_1M5xQ3B4OhIKeHNx",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/delete-connect-account",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"delete-connect-account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmPayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "booking_id",
+									"value": "18",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "success",
+									"description": "success or error",
+									"type": "text"
+								},
+								{
+									"key": "transaction_id",
+									"value": "TRANSACTION_ID",
+									"description": "require in case of success status",
+									"type": "text"
+								},
+								{
+									"key": "receipt_url",
+									"value": "RECEIPT_URL",
+									"description": "optional in case of success status",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/confirm-payment",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"confirm-payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RescheduleBooking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "booking_id",
+									"value": "119",
+									"type": "text"
+								},
+								{
+									"key": "event_date",
+									"value": "17 May 2023",
+									"type": "text"
+								},
+								{
+									"key": "event_time",
+									"value": "07:00 PM",
+									"type": "text"
+								},
+								{
+									"key": "event_end_date",
+									"value": "21 May 2023",
+									"type": "text"
+								},
+								{
+									"key": "event_end_time",
+									"value": "11:00 PM",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/reschedule-booking",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"reschedule-booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPaymentInfo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "account_number",
+									"value": "4242424242424242",
+									"type": "text"
+								},
+								{
+									"key": "account_holder_name",
+									"value": "Kamran Abrar",
+									"type": "text"
+								},
+								{
+									"key": "pan_number",
+									"value": "ABC012345678",
+									"type": "text"
+								},
+								{
+									"key": "bank_country",
+									"value": "India",
+									"type": "text"
+								},
+								{
+									"key": "bank_name",
+									"value": "Bank Name",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/add-payment-info",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"add-payment-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddEquipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "equipment_name",
+									"value": "Photo Album",
+									"type": "text"
+								},
+								{
+									"key": "equipment_photo",
+									"type": "file",
+									"src": "/C:/Users/kamra/Desktop/default.png"
+								},
+								{
+									"key": "amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "amount_per",
+									"value": "USD",
+									"description": "i don't know purpose of this attribute, i just added it as you asked in MS word document",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/add-equipment",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"add-equipment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllEquipment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/all-equipment/19",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"all-equipment",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEquipment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/delete-equipment/1",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"delete-equipment",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RatePhotographer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "photographer_id",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "4.5",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Great Work!",
+									"type": "text"
+								},
+								{
+									"key": "booking_id",
+									"value": "126",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/rate-photographer",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"rate-photographer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBooking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/delete-booking/127",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"delete-booking",
+								"127"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CustomOrderNotificationToPhotographer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photographer_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "accepted",
+									"description": "accepted, rejected",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/send-custom-order-notification-to-photographer",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"send-custom-order-notification-to-photographer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NotificationList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/user-notifications/2",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"user-notifications",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InstaPayment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "API Complete URL",
+									"value": "{{Base_URL}}/api/insta-payment/{booking_id}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/insta-payment/120",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"insta-payment",
+								"120"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PhotographerSkills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/photographer-skills",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"photographer-skills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Photographer",
+			"item": [
+				{
+					"name": "PhotographerHome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/photographer-home/5",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"photographer-home",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangeBookingStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "booking_id",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "rejected",
+									"description": "accepted, declined, complete",
+									"type": "text"
+								},
+								{
+									"key": "rejected_by",
+									"value": "67",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/change-booking-status",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"change-booking-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PhotographerBookingHistory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/photographer-history/6",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"photographer-history",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpcomingBookings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photographer_id",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "26 Dec 2022",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/upcoming-bookings",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"upcoming-bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PendingBookings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Base_URL",
+									"value": "{{Base_URL}}/api/pending-bookings/{photographer_id}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/pending-bookings/22",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"pending-bookings",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProcessedBookings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Base_URL",
+									"value": "{{Base_URL}}/api/processed-bookings/{photographer_id}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/processed-bookings/22",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"processed-bookings",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CompletedBookings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Base_URL",
+									"value": "{{Base_URL}}/api/completed-bookings/{photographer_id}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/completed-bookings/22",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"completed-bookings",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateTimeslostAndAvailability",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "is_available",
+									"value": "1",
+									"description": "boolean (0, 1)",
+									"type": "text"
+								},
+								{
+									"key": "timeslots",
+									"value": "[{\"time\":\"1:00 AM\"},{\"time\":\"2:00 AM\"},{\"time\":\"3:00 AM\"},{\"time\":\"4:00 AM\"},{\"time\":\"5:00 AM\"},{\"time\":\"6:00 AM\"},{\"time\":\"7:00 AM\"},{\"time\":\"8:00 AM\"},{\"time\":\"9:00 AM\"},{\"time\":\"10:00 AM\"},{\"time\":\"11:00 AM\"},{\"time\":\"12:00 PM\"},{\"time\":\"01:00 PM\"},{\"time\":\"02:00 PM\"},{\"time\":\"03:00 PM\"},{\"time\":\"04:00 PM\"},{\"time\":\"05:00 PM\"},{\"time\":\"06:00 PM\"},{\"time\":\"07:00 PM\"},{\"time\":\"08:00 PM\"},{\"time\":\"09:00 PM\"},{\"time\":\"10:00 PM\"},{\"time\":\"11:00 PM\"},{\"time\":\"12:00 AM\"}]",
+									"type": "text"
+								},
+								{
+									"key": "photographer_id",
+									"value": "13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/update-timeslots-and-availability",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"update-timeslots-and-availability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CustomOrderNotificationToUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photographer_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "withdrawn",
+									"description": "created, withdrawn",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/send-custom-order-notification-to-user",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"send-custom-order-notification-to-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NotificationList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/api/user-notifications/2",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"user-notifications",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Portfolio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "action",
+									"value": "edit",
+									"description": "create, view, edit, delete",
+									"type": "text"
+								},
+								{
+									"key": "photographer_id",
+									"value": "70",
+									"description": "required if action is create, view",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Portfolio Title",
+									"type": "text"
+								},
+								{
+									"key": "portfolio_date",
+									"value": "1690977429",
+									"type": "text"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/kamra/Pictures/default.png",
+										"/C:/Users/kamra/Pictures/group.png"
+									]
+								},
+								{
+									"key": "portfolio_id",
+									"value": "8",
+									"description": "required if action is edit, delete",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Base_URL}}/api/portfolio",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"api",
+								"portfolio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instamojo Marketplace",
+			"item": []
+		}
+	]
+}

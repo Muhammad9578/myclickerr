@@ -1,0 +1,10 @@
+Apis:
+
+
+To be Created:
+1. photographer Account Deletion Api
+
+
+To be checked:
+1. Forget Password Api(Forget password Email is not sent to entered email)
+2.Rescdule Booking api

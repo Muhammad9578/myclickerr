@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "854699154878",
+    "project_id": "myclickerr-f258c",
+    "storage_bucket": "myclickerr-f258c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854699154878:android:652700a9a2374d28636def",
+        "android_client_info": {
+          "package_name": "com.dexcode.photo_lab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854699154878-n3un1b7do3i3djubdr4i82es7aa60sg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dexcode.photo_lab",
+            "certificate_hash": "cf911f711cb8b86d815cd3794ac976ce9f6ca8d4"
+          }
+        },
+        {
+          "client_id": "854699154878-r4ohf1rrpobo1aaiq2lf1rtmgsuvg210.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dexcode.photo_lab",
+            "certificate_hash": "860ef87a403fd39cf789abf9a51c850f428d974c"
+          }
+        },
+        {
+          "client_id": "854699154878-s787l1bk12n7eig8k4b2qh4qaejoqlnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpJUdY4QGDBrcvdyWXZXQ1LrQIfVlWVdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854699154878-2094peee852fj1fm0mes6rsmvat1vd6m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854699154878-dafjfdcohv1lrahv3kclh6n6dnfn2cq1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dexcode.photoLab.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854699154878:android:ecfd989a330ff46c636def",
+        "android_client_info": {
+          "package_name": "com.dexcode.photo_lab_support"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854699154878-s787l1bk12n7eig8k4b2qh4qaejoqlnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpJUdY4QGDBrcvdyWXZXQ1LrQIfVlWVdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854699154878-2094peee852fj1fm0mes6rsmvat1vd6m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854699154878-dafjfdcohv1lrahv3kclh6n6dnfn2cq1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dexcode.photoLab.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
